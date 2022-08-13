@@ -15,9 +15,7 @@ prompt.get('input', function (err, result) {
         } else {
             console.log("OUT");
         }
-    } else {
-        console.log("ERROR");
-    }
+    } 
     
   
 });
