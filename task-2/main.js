@@ -10,7 +10,7 @@ prompt.get('input', function (err, result) {
     let b = parseInt(numbers[1])
     let c = parseInt(numbers[2])
     if (a,b,c<10**9) {
-        if (a>=b&&a<=c) {
+        if (a>b&&a<c) {
             console.log("IN");
         } else {
             console.log("OUT");
