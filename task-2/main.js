@@ -10,11 +10,20 @@ prompt.get('input', function (err, result) {
     let b = parseInt(numbers[1])
     let c = parseInt(numbers[2])
     if (a<10**9&&b<10**9&&c<10**9) {
-        if (a<b||a>c) {
-            console.log("OUT");
-        } else {
-            console.log("IN");
-        }
+        if (b>0&&c>0) {
+            if (a<b||a>c) {
+                console.log("OUT");
+            } else {
+                console.log("IN");
+            }
+        } else if (b<0&&c<0) {
+            if (a>b||a<c) {
+                console.log("OUT");
+            } else {
+                console.log("IN");
+            }
+        } 
+       
     } else {
         console.log("ERROR");
     }
